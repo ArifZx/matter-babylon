@@ -27,6 +27,8 @@ let spawnInterval = 300;
 
 let rotationSpeed = 10;
 
+let maxLifetime = 15000;
+
 let time = Date.now();
 let rawDelta = 0;
 let delta;
@@ -63,7 +65,7 @@ engine.runRenderLoop(() => {
       ball.rotation.z = -ball.body.angle;
       ball.lifetime += delta;
 
-      if (ball.lifetime > 8000) {
+      if (ball.lifetime > maxLifetime) {
         balls.splice(i, 1);
         i--;
         MWorld.remove(physics.world, ball.body);
