@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/ArifZx/matter-babylon/issues"
   },
-  "homepage": "https://github.com/ArifZx/matter-babylon#readme"
+  "homepage": "https://github.com/ArifZx/matter-babylon#readme",
+  "devDependencies": {
+    "babylon": "^6.18.0",
+    "matter-js": "^0.14.2"
+  }
 }
